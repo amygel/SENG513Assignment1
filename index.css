@@ -25,24 +25,40 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #555;}
 
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 120%;
-  z-index: -1;
+/* Card Styling */ 
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
 }
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+
+.card-container {
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.19)!important;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px; /* 5px rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffaf0
+}
+
+.card-container img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.card-header, .card-footer {
+  height: 50px;
+  background: #e3e617;
+  font-size: 40px;
 }
 
 /* https://css-tricks.com/text-blocks-over-image/ */
@@ -52,6 +68,7 @@ h1 {
    left: 10px; 
    width: 100%; 
    color: white;
+   text-align: center
 }
 
 h2 { 
@@ -60,13 +77,15 @@ h2 {
    left: 20px; 
    width: 100%; 
    color: white;
+   text-align: center
 }
 
+/* Table Styling */
 th, td {
 	padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 th {
